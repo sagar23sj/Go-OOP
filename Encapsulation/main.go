@@ -13,4 +13,12 @@ func main() {
 	count := counter.Count(100)
 
 	fmt.Println("Value of the Counter : ", count)
+
+	//Creating Variable of Unexported type internalCounter
+	//Initializing the value of variable to 10
+
+	//uncommenting following lines will lead to error in program
+	//internalCount := counter.internalCounter(10)
+	//fmt.Println("Value of the Current Time : ", internalCount)
+
 }
