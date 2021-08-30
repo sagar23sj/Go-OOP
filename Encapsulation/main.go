@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/sagar23sj/Go-OOP/Encapsulation/counter"
+	"github.com/sagar23sj/Go-OOP/Encapsulation/employee"
 )
 
 func main() {
@@ -26,5 +27,15 @@ func main() {
 
 	internalCount := counter.NewInternalCounter(10)
 	fmt.Println("Value of the Internal Count : ", internalCount)
+
+	//Creating an Object of type Employee from employee package.
+	//uncommenting following code will result in error
+	emp := employee.Employee{
+		Name:   "James",
+		Age:    33,
+		salary: 100000,
+	}
+
+	fmt.Printf("\nEmployee Details : %v", emp)
 
 }
