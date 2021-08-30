@@ -49,10 +49,16 @@ func main() {
 	fmt.Printf("Employee Details : %v", emp)
 
 	//Creating an object of type Dog from animal package
+	//to make below commented code work, change type animal to Animal
+	// dog := animal.Dog{
+	// 	Animal:   animal.Animal{Name: "Bruno"},
+	// 	NoOfLegs: 4,
+	// }
+
 	dog := animal.Dog{
-		Animal:   animal.Animal{Name: "Bruno"},
 		NoOfLegs: 4,
 	}
+	dog.Name = "Maggie"
 
 	fmt.Printf("\nDetails of Dog : %+v\n", dog)
 }

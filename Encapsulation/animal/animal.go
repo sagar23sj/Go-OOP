@@ -1,12 +1,12 @@
 package animal
 
 //Exported type struct
-type Animal struct {
+type animal struct {
 	Name string
 }
 
 //Exported type Dog embedding type Animal
 type Dog struct {
-	Animal
+	animal
 	NoOfLegs int
 }
