@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/sagar23sj/Go-OOP/Encapsulation/animal"
 	"github.com/sagar23sj/Go-OOP/Encapsulation/counter"
 	"github.com/sagar23sj/Go-OOP/Encapsulation/employee"
 )
@@ -46,4 +47,12 @@ func main() {
 	//Setting unexported field salary using an exported method
 	emp.SetSalary(1111111)
 	fmt.Printf("Employee Details : %v", emp)
+
+	//Creating an object of type Dog from animal package
+	dog := animal.Dog{
+		Animal:   animal.Animal{Name: "Bruno"},
+		NoOfLegs: 4,
+	}
+
+	fmt.Printf("\nDetails of Dog : %+v\n", dog)
 }
