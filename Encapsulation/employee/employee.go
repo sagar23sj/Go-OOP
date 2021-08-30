@@ -6,3 +6,7 @@ type Employee struct {
 	Age    int
 	salary float64
 }
+
+func (e *Employee) SetSalary(val float64) {
+	e.salary = val
+}

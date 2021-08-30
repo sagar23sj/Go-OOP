@@ -29,13 +29,21 @@ func main() {
 	fmt.Println("Value of the Internal Count : ", internalCount)
 
 	//Creating an Object of type Employee from employee package.
+
 	//uncommenting following code will result in error
+	// emp := employee.Employee{
+	// 	Name:   "James",
+	// 	Age:    33,
+	// 	salary: 100000,
+	// }
+
+	//Creating an Object of type Employee from employee package.
 	emp := employee.Employee{
-		Name:   "James",
-		Age:    33,
-		salary: 100000,
+		Name: "James",
+		Age:  33,
 	}
 
-	fmt.Printf("\nEmployee Details : %v", emp)
-
+	//Setting unexported field salary using an exported method
+	emp.SetSalary(1111111)
+	fmt.Printf("Employee Details : %v", emp)
 }
